@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="iqr_4b_robot">
+  <xacro:include filename="$(find iqr_kobuki_description)/urdf/zed.xacro"/>
+  <xacro:include filename="$(find iqr_kobuki_description)/urdf/vlp16.xacro"/>
+  
+  <xacro:include filename="$(find kobuki_description)/urdf/kobuki.urdf.xacro" />
+  <kobuki/>
+    <!-- VLP-16 lidar -->
+  <xacro:vlp16 package="iqr_kobuki_description" parent="base_footprint">
+    <origin xyz="-0.005 0 0.528" rpy="0 0 0" />
+  </xacro:vlp16>
+
+  <!-- ZED Camera -->
+  <xacro:zed package="iqr_kobuki_description" parent="base_footprint">
+    <origin xyz="0.27193 0 -0.06943" rpy="0 0 0" />
+  </xacro:zed>
+  </robot>
