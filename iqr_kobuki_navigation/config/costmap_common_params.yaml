@@ -1,8 +1,8 @@
-footprint: [[-0.445, -0.29], [-0.445, 0.29], [0.445, 0.29], [0.445, -0.29]]
-
+#footprint: [[-0.445, -0.29], [-0.445, 0.29], [0.445, 0.29], [0.445, -0.29]]
+robot_radius: 0.105
 #layer definitions
 static_layer:
-    map_topic: /map
+    map_topic: map
     subscribe_to_updates: true
 
 obstacle_layer:

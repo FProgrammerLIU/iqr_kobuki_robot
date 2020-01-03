@@ -21,12 +21,12 @@
       <child link="${prefix}_link"/>
     </joint>
 
-<!--     <link name="velodyne"/>
+  <link name="velodyne"/>
     <joint name="velodyne_link_joint" type="fixed">
       <origin xyz="0 0 0.040" rpy="0 0 0" />
       <parent link="${prefix}_link"/>
       <child link="velodyne"/>
-    </joint> -->
+    </joint>
 
   </xacro:macro>
 

@@ -17,7 +17,7 @@
     <rosparam file="$(find iqr_kobuki_navigation)/config/move_base_params.yaml" command="load" />
     <rosparam file="$(find iqr_kobuki_navigation)/config/dwa_local_planner_params.yaml" command="load" />
     <!-- <rosparam file="$(find caster_navigation)/config/base_local_planner_params.yaml" command="load" /> -->
-    <!-- <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/> -->
+    <remap from="cmd_vel" to="mobile_base/commands/velocity"/>
     <remap from="odom" to="$(arg odom_topic)"/>
   </node>
 </launch>
